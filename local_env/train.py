@@ -13,7 +13,7 @@ from ultralytics import YOLO
 ## load a pretrained model (recommended for training)
 model = YOLO('weight/best.pt')  
 
-conf_path = '/home/train_yolov8/local_env/config.yaml'
+conf_path = '/home/training_yolov8_2_4_wheeler/local_env/config.yaml'
 number_of_epochs = 300
 
 
