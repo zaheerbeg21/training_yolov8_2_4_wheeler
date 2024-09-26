@@ -1,0 +1,7 @@
+path: /home/train_yolov8/images_dataset/ # dataset path,  use absolute path
+train: /home/train_yolov8/images_dataset/images # training images
+val: /home/train_yolov8/val_images # validation images
+
+# Classes
+names:
+  0: license plate
