@@ -1,7 +1,0 @@
-path: /home/training_yolov8_2_4_wheeler/images_dataset/ # dataset path,  use absolute path
-train: /home/training_yolov8_2_4_wheeler/images_dataset/images # training images
-val: /home/training_yolov8_2_4_wheeler/val_images # validation images
-
-# Classes
-names:
-  0: license plate

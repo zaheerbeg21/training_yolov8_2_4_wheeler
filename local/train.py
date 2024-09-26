@@ -8,12 +8,11 @@ from ultralytics import YOLO
 # model = YOLO('weight/epc_100_dataset_165/weights/best.pt').load('weight/epc_100_dataset_165/weights/best.pt')  # build from YAML and transfer weights
 
 # Load a model
-# model = YOLO('path/to/last.pt')  # load a partially trained model
-
+model = YOLO('yolov8n.yaml')  # build a new model from YAML
 ## load a pretrained model (recommended for training)
-model = YOLO('weight/best.pt')  
+model = YOLO('/home/training_yolov8_2_4_wheeler/runs/detect/train/weights/last.pt')   # always use absolute path
 
-conf_path = '/home/training_yolov8_2_4_wheeler/local_env/config.yaml'
+conf_path = '/home/training_yolov8_2_4_wheeler/local/config.yaml'   # always use absolute path
 number_of_epochs = 300
 
 

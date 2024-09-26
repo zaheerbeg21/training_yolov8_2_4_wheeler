@@ -1,4 +1,5 @@
-runs/
 google_colab/
-val_images/
+images_dataset/
+validation_images/
 weights/
+env/
