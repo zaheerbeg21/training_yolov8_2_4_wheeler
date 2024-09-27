@@ -1,0 +1,21 @@
+# Training parameters
+epochs: 100  # Increase from 65 to allow for potential improvements
+imgsz: 800  # Try a larger image size
+
+# Learning rate
+lr0: 0.001  # Start with a slightly lower learning rate
+lrf: 0.1  # More aggressive final learning rate factor
+
+# Augmentation (if not already set)
+mosaic: 0.5  # Reduce mosaic augmentation
+mixup: 0.1  # Add some mixup augmentation
+copy_paste: 0.1  # Add copy-paste augmentation
+
+# Regularization
+weight_decay: 0.0005  # Slightly increase weight decay for regularization
+
+# Early Stopping
+patience: 100  # Increase patience to allow for potential late improvements
+
+# Validation
+val_freq: 1  # Validate every epoch to get a smoother view of model performance
