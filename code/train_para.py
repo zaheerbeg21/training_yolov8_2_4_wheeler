@@ -14,18 +14,17 @@ conf_path = '/home/training_yolov8_2_4_wheeler/data/config.yaml'   # always use 
 # Hyperparameters
 hyperparameters = {
     'data': conf_path,
-    'epochs': 300,
+    'epochs': 10,
     'lr0': 0.01,  # initial learning rate
     'lrf': 0.01,  # final learning rate (lr0 * lrf)
     'patience': 100,
-    'iterations': 300,
     'optimizer': "Adam",
     'imgsz': 640,
     'batch': 16,
     'project': 'yolov8_license_plate_detection',
     'name': 'model_1',
     'single_cls': True,  # Assuming you're working with a single class (added symbols)
-    'save_period': 50,  # Save a checkpoint every 50 epochs
+    'save_period': 25,  # Save a checkpoint every 50 epochs
     'device': 'cuda'  # Explicitly set to use CUDA
 }
 
