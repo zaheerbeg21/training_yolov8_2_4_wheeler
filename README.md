@@ -1,6 +1,10 @@
 # train yolov8 on ANPR dataset
 
-## dataset
+## environment 
+python -m venv env
+cd ~/env
+source bin/activate
+source ./activate
 
 # download sort
 
