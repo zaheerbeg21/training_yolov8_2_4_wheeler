@@ -2,10 +2,14 @@ CUDA_LAUNCH_BLOCKING=1
 
 from ultralytics import YOLO
 
-# Load a model
-model = YOLO('/home/training_yolov8_2_4_wheeler/runs/detect/train/weights/best.pt')   # always use absolute path
 
-conf_path = '/home/training_yolov8_2_4_wheeler/local/config.yaml'   # always use absolute path
+# Load a model
+model = YOLO('yolov8n.yaml')  # build a new model from YAML
+
+## Load a pretrained model
+#model = YOLO('/home/training_yolov8_2_4_wheeler/runs/detect/train/weights/best.pt')   # always use absolute path
+
+conf_path = '/home/training_yolov8_2_4_wheeler/data/config.yaml'   # always use absolute path
 
 # Hyperparameters
 hyperparameters = {
@@ -15,7 +19,7 @@ hyperparameters = {
     'lrf': 0.01,  # final learning rate (lr0 * lrf)
     'patience': 100,
     'iterations': 300,
-    'optimizer': "AdamW",
+    'optimizer': "Adam",
     'imgsz': 640,
     'batch': 16,
     'project': 'yolov8_license_plate_detection',

@@ -9,10 +9,14 @@ from ultralytics import YOLO
 
 # Load a model
 model = YOLO('yolov8n.yaml')  # build a new model from YAML
-## load a pretrained model (recommended for training)
-model = YOLO('/home/training_yolov8_2_4_wheeler/runs/detect/train/weights/last.pt')   # always use absolute path
 
-conf_path = '/home/training_yolov8_2_4_wheeler/local/config.yaml'   # always use absolute path
+## Resume training
+#results = model.train(resume=True)
+
+## load a pretrained model (recommended for training)
+#model = YOLO('/home/training_yolov8_2_4_wheeler/runs/detect/train/weights/last.pt')   # always use absolute path
+
+conf_path = '/home/training_yolov8_2_4_wheeler/data/config.yaml'   # always use absolute path
 number_of_epochs = 300
 
 
